@@ -49,9 +49,9 @@ $I->click('#submitbutton');
 //Кабинет
 $I->see('Вы успешно добавили объявление','ul.statusMSG li');
 $I->see('Мои объявления','h1');
+$I->amOnPage('/my');
 $I->see($title,'h4 a');
 $I->moveMouseOver('.spr_red');
-$I->wait(1);
 $I->click('.spr_korzina'); // В корзину
 $I->acceptPopup();
 
