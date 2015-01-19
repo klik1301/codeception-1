@@ -59,3 +59,6 @@ $I->acceptPopup();
 $I->waitForElement('.stat3count', 30);
 $I->click('.stat3count');
 $I->see($title,'h4 a');
+
+$I->amOnPage('/auth/logout');
+$I->see('Доска бесплатных объявлений','h1');
