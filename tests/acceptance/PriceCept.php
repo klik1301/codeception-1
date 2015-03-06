@@ -40,4 +40,5 @@ $I->click('submit');
 $I->see('Мои объявления');
 $I->amOnPage('/my');
 $I->click('Ford');
-$I->canSeeInField('.viewPrice brad15', '10000 $');
+$I->waitForElement('.viewPrice', 30);
+$I->see('10 000 $','.viewPrice')
